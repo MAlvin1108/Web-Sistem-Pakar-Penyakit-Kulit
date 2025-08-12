@@ -1,5 +1,4 @@
 # Web-Sistem-Pakar-Penyakit-Kulit
-# Web-Sistem-Pakar-Penyakit-Kulit
 
 This is a web-based expert system for diagnosing skin diseases. The application is built using the Laravel framework with Inertia.js and React, providing a modern and interactive user experience. It allows for the management of diseases, symptoms, and diagnostic rules, as well as a user-facing interface for performing a diagnosis.
 
