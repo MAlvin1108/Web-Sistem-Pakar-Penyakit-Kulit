@@ -1,37 +1,82 @@
 # Web-Sistem-Pakar-Penyakit-Kulit
-<h2 align="left">Hi There 👋! My name Alvin, hope u enjoy it </h2>
+# Web-Sistem-Pakar-Penyakit-Kulit
 
-###
+This is a web-based expert system for diagnosing skin diseases. The application is built using the Laravel framework with Inertia.js and React, providing a modern and interactive user experience. It allows for the management of diseases, symptoms, and diagnostic rules, as well as a user-facing interface for performing a diagnosis.
 
-<div align="center">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=MAlvin1108&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
-</div>
+## Features
 
-###
+Based on the application's code, here are its key features:
 
-<img align="right" height="150" width="200" src="https://i.pinimg.com/originals/a9/52/92/a9529298e561cfd5d521f3acb4cb215a.gif"  />
+* **User Management**: The system includes a user authentication system with roles and permissions, powered by Laravel Breeze and Spatie/laravel-permission.
+* **Disease Management**: Administrators can manage and view a list of skin diseases, each with its own data and associated symptoms.
+* **Symptom Management**: The system includes a module for managing symptoms (`gejala`) which are used in the diagnostic process.
+* **Rule-based Diagnosis**: The core of the system uses a set of rules to determine a diagnosis based on the symptoms selected by the user.
+* **Diagnosis History**: The system keeps a history of diagnoses performed, allowing users and administrators to view past diagnostic results.
 
-###
+## Technology Stack
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
- </div>
+* **Framework**: Laravel
+* **Frontend**: Inertia.js, React, Tailwind CSS
+* **Database**: MySQL (configured in `.env` file)
+* **Dependencies**:
+    * `tightenco/ziggy` for route handling in Inertia.js
+    * `livewire/livewire` for dynamic frontend components
+    * `spatie/laravel-permission` for role-based access control
+    * `jantinnerezo/livewire-activitylog` for activity logging
 
-###
+## Installation and Setup
 
-<div align="left">
-  <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo" border-radius="8px" />
-  <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  border-radius="8px"/>
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  border-radius="8px"  />
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  border-radius="8px"> <a href="https://www.linkedin.com/in/muhammad-alvin-maulana-b363b1311/"></a></img>
-</div>
+To get this project up and running on your local machine, follow these steps:
 
-###
+1.  **Clone the repository**:
+    ```bash
+    git clone [https://github.com/malvin1108/web-sistem-pakar-penyakit-kulit.git](https://github.com/malvin1108/web-sistem-pakar-penyakit-kulit.git)
+    cd web-sistem-pakar-penyakit-kulit
+    ```
+
+2.  **Install PHP dependencies**:
+    ```bash
+    composer install
+    ```
+
+3.  **Install Node.js dependencies**:
+    ```bash
+    npm install
+    ```
+
+4.  **Set up the environment file**:
+    Create a `.env` file by copying the `.env.example` file.
+    ```bash
+    cp .env.example .env
+    ```
+
+5.  **Generate application key**:
+    ```bash
+    php artisan key:generate
+    ```
+
+6.  **Configure the database**:
+    In your `.env` file, configure your database connection details (e.g., `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`).
+
+7.  **Run migrations and seeders**:
+    This will create the necessary tables and populate the database with initial data, including a default admin user.
+    ```bash
+    php artisan migrate --seed
+    ```
+
+8.  **Run the application**:
+    Start the Laravel development server and the Vite server.
+    ```bash
+    php artisan serve
+    npm run dev
+    ```
+
+The application will be available at `http://localhost:8000`.
+
+## Default Credentials
+
+A default admin user is created during the seeding process. You can use the following credentials to log in:
+
+* **Username**: `admin`
+* **Password**: `password`
 
